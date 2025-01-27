@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Website</title>
+</head>
+<body bgcolor="#f5f5f5">
+    <header style="text-align: center;">
+        <h1 style="font-family: Georgia, serif; margin: 0;">Travel Adventures</h1>
+        <nav style="margin-top: 20px;">
+            <a href="#home" >Home</a>
+            <a href="#destinations" >Destinations</a>
+            <a href="#packages" >About US</a>
+            <a href="#contact" >Contact US</a>
+        </nav>
+    </header>
+
+    <main style="padding: 20px; max-width: 1200px; margin: 0 auto;">
+        <section style="text-align: center; margin: 40px 0;">
+            <h2 style="color: #2c3e50; font-family: Georgia, serif;">Discover Your Next Adventure</h2>
+            <p style="color: #34495e; text-align: center;">
+                Welcome to Travel Adventures, where dreams take flight! Experience the world's most breathtaking destinations
+                with our carefully curated travel packages. From pristine beaches to historic cities, we make your travel
+                dreams a reality.
+            </p>
+        </section>
+
+        <section style="margin: 40px 0;">
+            <h2 style="text-align: center;">Featured Destinations</h2>
+            <div style="display: table; width: 100%; border-spacing: 20px;">
+                <div style="display: table-cell; width: 33%; ">
+                    <h3 style="color: #2c3e50; text-align: center;">Maldives</h3>
+                    <img src="./images/destination1.jpg" alt="Maldives" style="width: 100%; height: auto;">
+                    <p style="color: #34495e; text-align: center; ">
+                        The Maldives, an idyllic archipelago in the Indian Ocean, is a paradise of pristine white-sand beaches, crystal-clear turquoise waters, and vibrant coral reefs. Perfect for a tranquil escape, the Maldives offers luxurious overwater villas, world-class diving spots, and breathtaking sunsets. Whether you're snorkeling with colorful marine life, indulging in spa treatments, or simply relaxing on a secluded beach, the Maldives provides an unparalleled setting for an unforgettable tropical getaway.
+                    </p>
+                </div>
+                <div style="display: table-cell; width: 33%; ">
+                    <h3 style="color: #2c3e50; text-align: center;">Paris</h3>
+                    <img src="./images/destination2.jpg" alt="Paris" style="width: 100%; height: auto;">
+                    <p style="color: #34495e; text-align: center;">
+                        Paris, the enchanting capital of France, is renowned for its timeless romance, iconic landmarks, and rich cultural heritage. From the stunning Eiffel Tower to the grandeur of the Louvre Museum, the city offers a myriad of sights to explore. Stroll along the charming streets of Montmartre, savor world-class cuisine at cozy bistros, and enjoy a boat ride on the Seine River. Paris, often referred to as the "City of Light," is a place where history, art, and modern elegance seamlessly blend together.
+                    </p>
+                </div>
+                <div style="display: table-cell; width: 33%; ">
+                    <h3 style="color: #2c3e50; text-align: center;">Dubai</h3>
+                    <img src="./images/destination3.jpg" alt="Dubai" style="width: 100%; height: auto;">
+                    <p style="color: #34495e; text-align:center;">
+                        Dubai, a dazzling metropolis in the United Arab Emirates, is a city of superlatives known for its futuristic skyline, luxurious lifestyle, and ambitious architectural feats. Home to the world's tallest building, the Burj Khalifa, and the extravagant Palm Jumeirah, Dubai offers endless opportunities for shopping, entertainment, and adventure. Explore the vibrant markets of the old souks, embark on a desert safari, or indulge in fine dining experiences. Dubai seamlessly merges tradition with innovation, making it a dynamic and captivating destination.
+                    </p>
+                </div>
+            </div>
+        </section>
+    <section>
+        <h2>Travel Packages</h2>
+        <table>
+            <tr>
+                <th>Package Name</th>
+                <th>Destination</th>
+                <th>Price</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Maldives</td>
+                <td>Beautiful Beach</td>
+                <td>$500</td>
+                <td>3 days</td>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>Luxembourg Gardens</td>
+                <td>$700</td>
+                <td>1 day</td>
+            </tr>
+            <tr>
+                <td>Dubai</td>
+                <td>Dubai Marina</td>
+                <td>$400</td>
+                <td>3 days</td>
+            </tr>
+        </table>
+    </section>
+
+    <section style="margin: 40px 0; background: white; padding: 20px; border-radius: 10px;">
+        <h2>Book Your Travel</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="destination">Destination:</label>
+            <select id="destination" name="destination">
+                <option value="beach">Maldives</option>
+                <option value="Garden">Paris</option>
+                <option value="City">Dubai</option>
+            </select><br><br>
+
+            <label>Travel Class:</label><br>
+            <input type="radio" id="economy" name="class" value="economy">
+            <label for="economy">Economy</label><br>
+            <input type="radio" id="business" name="class" value="business">
+            <label for="business">Business</label><br>
+            <input type="radio" id="first" name="class" value="first">
+            <label for="first">First Class</label><br><br>
+
+            <label>Add-ons:</label><br>
+            <input type="checkbox" id="insurance" name="addons" value="insurance">
+            <label for="insurance">Insurance</label><br>
+            <input type="checkbox" id="meal" name="addons" value="meal">
+            <label for="meal">Meal Plan</label><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</main>
+
+<footer>
+
+    <p>Contact us: info@travelbooking.com</p>
+    <p>Follow us on:
+        <a href="#" style="color:black;">Facebook</a>,
+        <a href="#" style="color:black;">Twitter</a>,
+        <a href="#" style="color:black;">Instagram</a>
+    </p>
+</footer>
+
+</body>
+</html>
